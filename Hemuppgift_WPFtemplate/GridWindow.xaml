@@ -1,0 +1,36 @@
+﻿<Window x:Class="Hemuppgift_WPFtemplate.GridWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
+        mc:Ignorable="d"
+        Title="GridWindow" Height="450" Width="800">
+    <DockPanel>
+    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+        <TextBlock Text="Row" FontSize="15" Background="Transparent" VerticalAlignment="Top"/>
+        <TextBox x:Name="rowTxt" Height="24" Width="40" Background="Transparent" VerticalAlignment="Top"/>
+        <TextBlock Text="Column" FontSize="15" Background="Transparent" VerticalAlignment="Top"/>
+        <TextBox x:Name="columnTxt" Height="24" Width="40" Background="Transparent" VerticalAlignment="Top"/>
+        <Button x:Name="btnApply" Content="Apply" FontSize="15" Width="80" Click="btnApply_Click" Background="Transparent" VerticalAlignment="Top"/>
+    </StackPanel>
+
+    <Grid x:Name="netGrid">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+
+    </DockPanel>
+</Window>

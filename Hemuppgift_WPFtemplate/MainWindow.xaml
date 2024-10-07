@@ -10,7 +10,7 @@
     <Grid>
     <Frame x:Name="MainFrame"/>
 
-        <Button x:Name="btnGrid" Content="Grid"/>
+        <Button x:Name="btnGrid" Content="Grid" Click="btnGrid_Click"/>
         <Button x:Name="btnStack" Grid.Column="1" Content="StackPanel"/>
         <Button x:Name="btnWrap" Content="WrapPanel" Grid.Row="1"/>
         <Button x:Name="btnDock" Grid.Column="1" Content="DockPanel" Grid.Row="1"/>
