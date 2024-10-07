@@ -30,5 +30,11 @@ namespace Hemuppgift_WPFtemplate
             WrapPanelWindow wrapWindow = new WrapPanelWindow();
             wrapWindow.Show();
         }
+
+        private void btnDock_Click(object sender, RoutedEventArgs e)
+        {
+            DockPanelWindow dockWindow = new DockPanelWindow();
+            dockWindow.Show();
+        }
     }
 }
