@@ -1,0 +1,34 @@
+﻿<Window x:Class="Hemuppgift_WPFtemplate.WrapPanelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
+        mc:Ignorable="d"
+        Title="WrapPanelWindow" Height="450" Width="800">
+    <DockPanel>
+    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+        <RadioButton x:Name="btnHorizontal" Margin="10" Click="btnHorizontal_Click"/>
+        <TextBlock Text="Horisontal" Margin="10"/>
+        <RadioButton x:Name="btnVertical" Margin="10" Click="btnVertical_Click"/>
+        <TextBlock Text="Vertikal" Margin="10"/>
+
+    </StackPanel>
+        <ScrollViewer>
+        <WrapPanel x:Name="panelWrap">
+
+            <Ellipse Height="100" Fill="Red" Width="100" Margin="5"/>
+            <Ellipse Height="90" Fill="Orange" Width="90" Margin="5"/>
+            <Ellipse Height="80" Fill="Yellow" Width="80" Margin="5"/>
+            <Ellipse Height="70" Fill="LightGreen" Width="70" Margin="5"/>
+            <Ellipse Height="60" Fill="Green" Width="60" Margin="5"/>
+            <Ellipse Height="50" Fill="LightBlue" Width="50" Margin="5"/>
+            <Ellipse Height="40" Fill="Blue" Width="40" Margin="5"/>
+            <Ellipse Height="30" Fill="Black" Width="30" Margin="5"/>
+
+
+        </WrapPanel>
+        </ScrollViewer>
+    </DockPanel>
+</Window>
